@@ -19,13 +19,13 @@ public class LISTA_11_NATA {
         System.out.print("Digite a temperatura a ser convertida: ");
         float temp = ler.nextFloat();
         
-        if (unidTemp.equals("c") || unidTemp.equals("C")){
-             float tempConvert = (float) ((temp * 1.8)+32);
-             System.out.println("A temperatura em °F é "+tempConvert);
+        if (unidTemp.equals("f") || unidTemp.equals("F")){
+             float tempConvert = (float) ((temp-32)/1.8);
+             System.out.println("A temperatura é "+tempConvert+"°F");
         }
-        else if (unidTemp.equals("f") || unidTemp.equals("F")){
-            float tempConvert = (float) ((temp-32)/1.8 );
-            System.out.println("A temperatura em °C é "+tempConvert);
+        else if (unidTemp.equals("c") || unidTemp.equals("C")){
+            float tempConvert = (float) ((temp * 1.8)+32);
+            System.out.println("A temperatura é "+tempConvert+"°C");
         }
     }
 }
