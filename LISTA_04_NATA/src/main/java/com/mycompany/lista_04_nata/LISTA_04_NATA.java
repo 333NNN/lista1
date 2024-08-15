@@ -6,7 +6,6 @@ package com.mycompany.lista_04_nata;
 
 import java.util.Scanner;
 
-
 /**
  *
  * @author Nata e Julia
@@ -16,12 +15,11 @@ public class LISTA_04_NATA {
         Scanner ler = new Scanner(System.in);
         System.out.println("SISTEMA DE LOGIN\n Para iniciar, cadastre seu usuário: ");
         String user = ler.nextLine();
-        String senha;
         System.out.print("Cadastre sua senha: ");
-        senha = ler.nextLine();
-        
+        String senha = ler.nextLine();
         int tentUser = 4;
         int tentSenha = 4;
+        
         while (tentUser > 0 && tentSenha > 0){
             System.out.println("Para entrar no sistema, digite seu usuário: ");
             String checkUser = ler.nextLine();
@@ -31,7 +29,7 @@ public class LISTA_04_NATA {
                 String checkSenha = ler.nextLine();
                 if (!checkSenha.equals(senha)){
                     tentSenha--;
-                    System.out.println("Senha inválida. Você tem "+ tentSenha +" tentativas: ");                
+                    System.out.println("Senha inválida. Você tem "+ tentSenha +" tentativas");                
                 }
                 else {
                     System.out.println("Login realizado com sucesso!");
@@ -40,7 +38,7 @@ public class LISTA_04_NATA {
             }
             else {
                 tentUser--;
-                System.out.println("Usuário inválido. Você tem "+ tentUser +" tentativas: ");
+                System.out.println("Usuário inválido. Você tem "+ tentUser +" tentativas");
             }
             if (tentUser == 0 || tentSenha == 0){
                 System.out.println("Usuário ou senha inválido(s). Sistema bloqueado\nEntre em contato com o suporte para desbloquear seu acesso.");
