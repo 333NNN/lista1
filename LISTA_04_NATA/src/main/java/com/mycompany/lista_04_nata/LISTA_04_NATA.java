@@ -17,16 +17,9 @@ public class LISTA_04_NATA {
         System.out.println("SISTEMA DE LOGIN\n Para iniciar, cadastre seu usuário: ");
         String user = ler.nextLine();
         String senha;
+        System.out.print("Cadastre sua senha: ");
+        senha = ler.nextLine();
         
-        while (true) {
-            System.out.print("Cadastre sua senha de 6 dígitos: ");
-            senha = ler.nextLine();
-            if (senha.length() == 6) {
-                break;
-            } else {
-                System.out.println("Senha inválida. A senha deve ter exatamente 6 dígitos.");
-            }
-        }
         int tentUser = 4;
         int tentSenha = 4;
         while (tentUser > 0 && tentSenha > 0){
