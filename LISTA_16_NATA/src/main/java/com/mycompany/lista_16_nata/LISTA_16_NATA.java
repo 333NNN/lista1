@@ -18,16 +18,16 @@ public class LISTA_16_NATA {
         System.out.print("Digite uma palavra: ");
         String palavra = ler.nextLine();
         
-        boolean ehPalindromo = true;
+        boolean palindromo = true;
         
         for (int i = 0; i < palavra.length() / 2; i++) {
             if (palavra.charAt(i) != palavra.charAt(palavra.length() - 1 - i)) {
-                ehPalindromo = false;
+                palindromo = false;
                 break;
             }
         }
         
-        if (ehPalindromo) {
+        if (palindromo) {
             System.out.println("A palavra " + palavra + " é um palíndromo.");
         } 
         else {
