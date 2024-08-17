@@ -18,7 +18,7 @@ public class LISTA_20_NATA {
         System.out.println("Bem-vindo(a) à Loja Virtual!\nDigite o valor da compra: ");
         float valor = ler.nextFloat();
         boolean valid = true;
-        float valorFinal = 0, porcentCartao = 3.0f/100, porcentVista = 10.0f/100, porcentDebito = 5.0f/100;
+        float valorFinal = 0, porcentCartao = 1.5f/100, porcentVista = 10.0f/100, porcentDebito = 5.0f/100;
         
         while (valid){
             System.out.println("Digite a forma de pagamento:\n1 - Cartão de crédito (sujeito a taxas)\n2 - Dinheiro/Pix\n3 - Cartão débito");
@@ -26,7 +26,7 @@ public class LISTA_20_NATA {
             
 
             if (formaPag == 1){
-                valorFinal = valor + (porcentCartao * valor);
+                valorFinal = valor - (porcentCartao * valor);
                 break;
             }
             else if (formaPag == 2){
