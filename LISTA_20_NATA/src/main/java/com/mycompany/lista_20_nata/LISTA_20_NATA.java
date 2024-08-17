@@ -21,7 +21,7 @@ public class LISTA_20_NATA {
         float valorFinal = 0, porcentCartao = 1.5f/100, porcentVista = 10.0f/100, porcentDebito = 5.0f/100;
         
         while (valid){
-            System.out.println("Digite a forma de pagamento:\n1 - Cartão de crédito (sujeito a taxas)\n2 - Dinheiro/Pix\n3 - Cartão débito");
+            System.out.println("Digite a forma de pagamento:\n1 - Cartão de crédito\n2 - Dinheiro/Pix\n3 - Cartão débito");
             int formaPag = ler.nextInt();
             
 
